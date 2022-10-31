@@ -17,11 +17,12 @@ import {AppBar} from '@mui/material'
 import Flicking from '@egjs/react-flicking'
 
 //Dektop app-bar
-export function DeskBar(){
+export function DeskBar(props){
 	return (
 		<Box sx={{flexGrow:"1"}}>
 			<AppBar position="static">
 				<Toolbar>
+				{props.children}
 				</Toolbar>
 			</AppBar>
 		</Box>
@@ -91,8 +92,8 @@ export function Carrousel(props){
 			<CardContent sx={{display:"flex", justifyContent:"center"}}>
 				<Box sx={{width:"100%"}}>
 					<Flicking align="prev"
-						deceleration={0.067}
-						duration={370}
+						deceleration={0.027}
+						duration={230}
 						ref={theFlicker}
 						onChanged={(ev) => changePage(ev.index)}
 						panelsPerView={panelCount}

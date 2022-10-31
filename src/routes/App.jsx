@@ -27,6 +27,7 @@ function App() {
   return (
 	<Box sx={{width:"100%",height:"100%"}}>
 		<DeskBar>
+			<Box component="img" src="lizard-white.png" sx={{height:"46px"}}/>
 			<Button variant="text" color="inherit" sx={{maxwidth:"28%"}}>home</Button>
 			<Button variant="text" color="inherit" sx={{maxwidth:"28%"}}>academic media</Button>
 		</DeskBar>
