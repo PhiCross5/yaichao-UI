@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -7,16 +8,15 @@ import {
 } from "react-router-dom"
 
 import './index.css';
-import App from './routes/App';
+import {App,HomePage} from './routes/App';
 import Pallo from './routes/Pallo';
 import FT from './routes/FT';
 import reportWebVitals from './reportWebVitals';
 
-
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App />
+		element: <App />,
 	},
 	{
 		path: "/pallo",
