@@ -26,11 +26,11 @@ function App() {
 
   return (
 	<Box sx={{width:"100%",height:"100%"}}>
-		<DeskBar>
-			<Box component="img" src="lizard-white.png" sx={{height:"46px"}}/>
+		<Box sx={{backgroundColor:"primary.main", color:"background.paper", width:"100%", display:"flex"}}>
+			<Box component="img" src="lizard-white.png" sx={{height:"34px",p:1}}></Box>
 			<Button variant="text" color="inherit" sx={{maxwidth:"28%"}}>home</Button>
 			<Button variant="text" color="inherit" sx={{maxwidth:"28%"}}>academic media</Button>
-		</DeskBar>
+		</Box>
 		<Typography variant="h3" component="h1"> Flavoured with Computer Science.</Typography>
 		<Typography variant="body" >based cringe normie chad soy wojak shrigma the attentiveness of a non-attractive human-being depends on few factors when taking into account popular thresholds such as 5-minute staredowns, 10% content memorized or direct eyecontact... you still reading this?</Typography>
 		<Box sx={{bgcolor:"primary.main"}}>threshold</Box>
