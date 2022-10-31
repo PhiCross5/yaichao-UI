@@ -11,3 +11,6 @@ This repository provides react components written in JSX with the use of a wide 
 - Components are at "src/".
   - `src/Carrousel.jsx`: Carrousel component with optional timer, displays 1 or 2 panels on screen at once for landscape tablet screens and bigger, powered by Flicking
   - `src/routes/App.jsx`: Flavour-text page with Material design App-bar and a Carrousel with 3 elements inside.
+- For demo pages, `cd` into the project's root folder and run `npm start`. This will start a server on your machine that answers at http://localhost:3000 or http://127.0.0.1:3000. Right now only two pages exist:
+  - `localhost:3000/`: index page, just flavour text, material design theme and a carrousel.
+  - 
