@@ -6,4 +6,8 @@ This repository provides react components written in JSX with the use of a wide 
 ## Parts required:
 - The components built here rely on the [MUI material-UI library for react.](https://mui.com/). -> `npm install @mui/material @emotion/react @emotion/styled`
 - The Carrousel component is mostly just a wrapper around [Flicking](https://naver.github.io/egjs-flicking/) -> `npm install @egjs/react-flicking`
-- ia
+- Demo pages are routed using [React Router]()
+## How-to
+- Components are at "src/".
+  - `src/Carrousel.jsx`: Carrousel component with optional timer, displays 1 or 2 panels on screen at once for landscape tablet screens and bigger, powered by Flicking
+  - `src/routes/App.jsx`: Flavour-text page with Material design App-bar and a Carrousel with 3 elements inside.
