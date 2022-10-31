@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@egjs/flicking": "^4.10.0",
+    "@egjs/flicking": "^4.10.1",
     "@egjs/react-flicking": "^4.10.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -16,6 +16,7 @@
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.7",
     "@types/react-dom": "^18.0.8",
+    "create-react-app": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
