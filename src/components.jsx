@@ -1,5 +1,5 @@
-import * as React from "react"
-import { useRef } from "react"
+import * as React from 'react'
+import { useRef } from 'react'
 
 //MUI library for material design baseline.
 import {Box} from '@mui/material'
@@ -16,22 +16,20 @@ import {AppBar} from '@mui/material'
 //The carrousel element is powered by Flicking.
 import Flicking from '@egjs/react-flicking'
 
-
+//Dektop app-bar
 export function DeskBar(){
-
 	return (
-			<AppBar position="static" >
+		<Box sx={{flexGrow:"1"}}>
+			<AppBar position="static">
 				<Toolbar>
-					<Box component="img" src="lizard-white.png"  sx={{height:"60px", mr:2}} 
-					></Box>
-					<Box sx={{color:"primary.contrastText"}}>rerun</Box>
 				</Toolbar>
 			</AppBar>
+		</Box>
 	)
 }
 
+//Carrousel with optional autoswipe timer and 1 or 2-panel display mode
 export function Carrousel(props){
-	
 	//externally settable page number
 	const [postsPage, setPostsPage] = React.useState(0)
 
@@ -82,25 +80,27 @@ export function Carrousel(props){
 		//so i had to change the property on the DOM element itself...
 			theFlicker.current.panelsPerView=panelCount
 		},[bigCarrousel, panelCount])
-
-	React.useEffect(() => {
-		console.log("panelCount changed to " + panelCount + " .")
-	}, [panelCount])
-
 	
-		return (
-		<Card variant="outlined">	
-			<CardContent sx={{display:"flex", justifyContent:"center"}}><Pagination count={props.children.length} page={postsPage+1} onChange={(e,val) => {changePage(val-1);} }/></CardContent>
-			<CardContent sx={{display:"flex", justifyContent:"center"}}> <Box sx={{width:"100%"}}><Flicking align="prev" 
-				deceleration={0.067}
-				ref={theFlicker}
-				onChanged={(ev) => changePage(ev.index)}
-				panelsPerView={panelCount}
-				renderOnSameKey={true}
-				>
-				{props.children}
-			</Flicking></Box></CardContent>
-					</Card>
-
-	)	
+	return (
+		<Card variant="outlined">
+			<CardContent sx={{display:"flex", justifyContent:"center"}}>
+				<Pagination count={props.children.length}
+					page={postsPage+1}
+					onChange={(e,val) => {changePage(val-1);} }/>
+			</CardContent>
+			<CardContent sx={{display:"flex", justifyContent:"center"}}>
+				<Box sx={{width:"100%"}}>
+					<Flicking align="prev"
+						deceleration={0.067}
+						duration={370}
+						ref={theFlicker}
+						onChanged={(ev) => changePage(ev.index)}
+						panelsPerView={panelCount}
+						renderOnSameKey={true}>
+						{props.children}
+					</Flicking>
+				</Box>
+			</CardContent>
+		</Card>
+	)
 }
