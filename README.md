@@ -7,6 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 CHANGELOG (most recent):
 - new custom theme "iaçú", made using the online mui theme generator. (*ps: if you make your own dark theme, set bright colors for the text manually, as the tool doesn't specify them in the generated code.*).
 - Applied MUI's CSS baseline for consistent styling even on foreign objects such as the `<Link>` tag from react-router.
+- `<Deskbar>` component replaced:
+  - A more barebones `<Box>` with buttons is now used, to condense the layout at the bar.
+  - The buttons now work! you can switch between homepage and a placeholder "academics" page.
 
 The components shown here are in alpha state. It has been cleaned up but don't take it as a reference of what clean, ellegant, maintainable code really looks like.
 
