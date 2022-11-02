@@ -52,16 +52,19 @@ const featured=[
 
 export function HomePage(){
 	return (
-		<Box sx={{width:"100%", backgroundColor:"background.paper"}}>
-			<Box sx={{mx:1}}>
+		<Box sx={{width:"100%", backgroundColor:"background.paper",px:1}}>
+			<Box>
 				<Typography variant="h3" component="h1"> Flavoured with Computer Science.</Typography>
-				<Typography variant="body" >based cringe normie chad soy wojak shrigma the attentiveness of a non-attractive human-being depends on few factors when taking into account popular thresholds such as 5-minute staredowns, 10% content memorized or direct eyecontact... you still reading this?</Typography>
+				<Typography variant="body" >Is the spacing of elements off for you? tweak it! Is copying files manually too tedious? script it! Everything is at your fingertips if you're willing to code it.</Typography>
 			</Box>
-			<Card sx={{mx:1}}raised><CardContent>threshold</CardContent></Card>
-			<Box sx={{display:"flex",justifyContent:"center"}}><Typography  variant="body"sx={{}} align={"center"}>centered text?</Typography></Box>
-			<Carrousel delay={2700}>
-				{featured.map((e,i) => <div className="flicking-panel" key={i}><Box sx={{ display:"flex", justifyContent:"center"}}>{e}</Box></div>)}
-			</Carrousel>
+			<Box sx={{my:1,px:2}}>
+				<Carrousel delay={2700}>
+					{featured.map((e,i) => <div className="flicking-panel" key={i}><Box sx={{ display:"flex", justifyContent:"center"}}o>{e}</Box></div>)}
+				</Carrousel>
+			</Box>
+			<Box>
+			<Typography variant="body2">while there is not much content here, feel free to browse whatever is already available.</Typography>
+			</Box>
 		</Box>
 	)
 }
