@@ -25,4 +25,4 @@ Many more components and demos are sure to come in the future, so stay hooked an
   - `src/routes/App.jsx`: Flavour-text page with Material design App-bar and a Carrousel with 3 elements inside.
 - For demo pages, `cd` into the project's root folder and run `npm start`. This will start a server on your machine that answers at http://localhost:3000 or http://127.0.0.1:3000. Right now only two pages exist:
   - `localhost:3000/`: index page, just flavour text, material design theme and a carrousel.
-  - `localhost:3000/flicker-test`: Flicker test page, demonstrates [issue number 742](https://github.com/naver/egjs-flicking/issues/742) in the react binding of the Flicker component and a workaround for that caveat.
+  - `localhost:3000/flicker-test`: Flicking test page, demonstrates [issue number 742](https://github.com/naver/egjs-flicking/issues/742) in the react binding of the Flicking component and a workaround for that caveat.
