@@ -11,7 +11,7 @@ CHANGELOG (most recent):
   - A more barebones `<Box>` with buttons is now used, to condense the layout at the bar.
   - The buttons now work! you can switch between homepage and a placeholder "academics" page.
 
-The components shown here are in alpha state. It has been cleaned up but don't take it as a reference of what clean, ellegant, maintainable code really looks like.
+The components shown here are in alpha state. It has been cleaned up but don't take it as a top-tier reference of what clean, ellegant, maintainable code really looks like.
 
 Many more components and demos are sure to come in the future, so stay hooked and provide feedback if you feel like it.
 
