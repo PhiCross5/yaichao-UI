@@ -3,7 +3,11 @@ This repository provides react components written in JSX with the use of a wide 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Status: Alpha-v0.1 2022-10-30
+## Status: Alpha-v0.1.4 2022-11-01
+CHANGELOG (most recent):
+- new custom theme "iaçú", made using the online mui theme generator. (*ps: if you make your own dark theme, set bright colors for the text manually, as the tool doesn't specify them in the generated code.*).
+- Applied MUI's CSS baseline for consistent styling even on foreign objects such as the `<Link>` tag from react-router.
+
 The components shown here are in alpha state. It has been cleaned up but don't take it as a reference of what clean, ellegant, maintainable code really looks like.
 
 Many more components and demos are sure to come in the future, so stay hooked and provide feedback if you feel like it.
