@@ -63,7 +63,7 @@ export function HomePage(){
 				</Carrousel>
 			</Box>
 			<Box>
-			<Typography variant="body2">while there is not much content here, feel free to browse whatever is already available.</Typography>
+			<Typography variant="body2">While there is not much content here, feel free to browse whatever is already available.</Typography>
 			</Box>
 		</Box>
 	)
