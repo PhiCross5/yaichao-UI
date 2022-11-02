@@ -83,7 +83,7 @@ export function Carrousel(props){
 		},[bigCarrousel, panelCount])
 	
 	return (
-		<Card variant="outlined">
+		<Card raised>
 			<CardContent sx={{display:"flex", justifyContent:"center"}}>
 				<Pagination count={props.children.length}
 					page={postsPage+1}
