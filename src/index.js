@@ -7,7 +7,7 @@ import {
 	Route,
 } from "react-router-dom"
 
-import './index.css';
+//import './index.css';
 import {App,HomePage} from './routes/App';
 import Pallo from './routes/Pallo';
 import FT from './routes/FT';
