@@ -88,7 +88,7 @@ export function App() {
 					onClick={() => setContent(<HomePage />)}
 				>	home
 				</Button>
-				<Link style={{}}><Button variant="text"
+				<Link ><Button variant="text"
 					sx={{color:"background.paper",maxwidth:"28%"}}
 					onClick={() => setContent(<Academic />)}
 				>	academic media
