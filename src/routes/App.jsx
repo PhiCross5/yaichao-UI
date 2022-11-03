@@ -46,7 +46,7 @@ const customTheme = createTheme(deepmerge(baseTheme,iaçú))
 const featured=[
 	<Box component="img" src="lizard-white.png" maxwidth="100%" height="auto"></Box>,
 	//<img src="archlinux.svg" ></img>,
-	<Box sx={{display:"flex", alignItems:"center",justifyContent:"center",height:"100%"}}><Box component="img" src="archlinux.svg" width="100%" sx={{height:"100%"}}></Box></Box>,
+	<Box component="img" src="archlinux.svg" sx={{maxWidth:"100%",height:"auto"}} ></Box>,
 	<Typography align="center">{"honestly i'm running out of ideas."}</Typography>
 ]
 
@@ -59,7 +59,7 @@ export function HomePage(){
 			</Box>
 			<Box sx={{my:1,px:2}}>
 				<Carrousel delay={2700}>
-					{featured.map((e,i) => <div className="flicking-panel" key={i}><Box sx={{ display:"flex", justifyContent:"center"}}o>{e}</Box></div>)}
+					{featured.map((e,i) => <div className="flicking-panel" key={i}><Box sx={{ display:"flex", width:"100%",height:"100%",justifyContent:"center", alignItems:"center"}}o>{e}</Box></div>)}
 				</Carrousel>
 			</Box>
 			<Box>
