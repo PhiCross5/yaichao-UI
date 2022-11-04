@@ -65,10 +65,10 @@ export function HomePage(){
 							height:"100%",
 							width:"100%",
 							objectFit:"fill",
-							filter:"blur(2.5px) brightness(0.44)"
+							filter:"blur(1.5px) brightness(0.86) "
 						}}></video>
 				</Box>
-				<Box sx={{position:"relative"}}>
+				<Box sx={{position:"relative", textShadow:"2px 2px 1.9px #000000, 1.6px 1.6px 7.4px #000000"}}>
 					<Typography variant="h3" component="h1"> Flavoured with Computer Science.</Typography>
 					<Typography variant="h6" >Is the spacing of elements off for you? tweak it! Is copying files manually too tedious? script it! Everything is at your fingertips if you're willing to code it.</Typography>
 				</Box>
