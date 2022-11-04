@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Status: Alpha-v0.1.5 2022-11-01
 CHANGELOG (most recent):
-- Background video to demonstrate CSS trickery with the `Box` element and video tag.
+- Background video to demonstrate CSS trickery with the `Box` element and video tag, complete with filters, object-fit space filling and a large minimum-height.
+
 The components shown here are in alpha state. It has been cleaned up but don't take it as a top-tier reference of what clean, ellegant, maintainable code really looks like.
 
 Many more components and demos are sure to come in the future, so stay hooked and provide feedback if you feel like it.
