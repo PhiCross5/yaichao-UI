@@ -56,9 +56,23 @@ const featured=[
 export function HomePage(){
 	return (
 		<Box sx={{width:"100%", backgroundColor:"background.paper",px:1}}>
-			<Box>
-				<Typography variant="h3" component="h1"> Flavoured with Computer Science.</Typography>
-				<Typography variant="body" >Is the spacing of elements off for you? tweak it! Is copying files manually too tedious? script it! Everything is at your fingertips if you're willing to code it.</Typography>
+			<Box sx={{position:"relative", minHeight:"70vh"}}>
+				<Box sx={{position:"absolute", overflow:"hidden",top:0,left:0,display:"flex",alignItems:"center",justifyContent:"center", width:"100%",height:"100%"}}>
+					<video
+						autoPlay muted loop
+						src="bgvid.mp4"
+						style = {{
+							height:"100%",
+							width:"100%",
+							objectFit:"fill",
+							filter:"blur(2.5px) brightness(0.81)"
+						}}></video>
+				</Box>
+				<Box sx={{position:"relative"}}>
+					<Typography variant="h3" component="h1"> Flavoured with Computer Science.</Typography>
+					<Typography variant="h6" >Is the spacing of elements off for you? tweak it! Is copying files manually too tedious? script it! Everything is at your fingertips if you're willing to code it.</Typography>
+				</Box>
+
 			</Box>
 			<Box sx={{my:1,px:2}}>
 				<Carrousel delay={2700}>
