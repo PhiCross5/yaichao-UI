@@ -3,13 +3,9 @@ This repository provides react components written in JSX with the use of a wide 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Status: Alpha-v0.1.4 2022-11-01
+## Status: Alpha-v0.1.5 2022-11-01
 CHANGELOG (most recent):
-- new custom theme "iaçú", made using the online mui theme generator. (*ps: if you make your own dark theme, set bright colors for the text manually, as the tool doesn't specify them in the generated code.*).
-- Applied MUI's CSS baseline for consistent styling even on foreign objects such as the `<Link>` tag from react-router.
-- `<Deskbar>` component replaced:
-  - A more barebones `<Box>` with buttons is now used, to condense the layout at the bar.
-  - The buttons now work! you can switch between homepage and a placeholder "academics" page.
+- Background video to demonstrate CSS trickery with the `Box` element and video tag, complete with filters, object-fit space filling and a large minimum-height.
 
 The components shown here are in alpha state. It has been cleaned up but don't take it as a top-tier reference of what clean, ellegant, maintainable code really looks like.
 
