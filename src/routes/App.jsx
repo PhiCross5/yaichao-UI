@@ -65,7 +65,7 @@ export function HomePage(){
 							height:"100%",
 							width:"100%",
 							objectFit:"fill",
-							filter:"blur(2.5px) brightness(0.81)"
+							filter:"blur(2.5px) brightness(0.44)"
 						}}></video>
 				</Box>
 				<Box sx={{position:"relative"}}>
