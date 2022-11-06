@@ -46,7 +46,7 @@ const customTheme = createTheme(deepmerge(baseTheme,iaçú))
 const featured=[
 	<Box component="img" src="lizard-white.png" maxwidth="100%" height="auto"></Box>,
 	<Box sx={{width:"100%",height:"100%", display:"grid", gridTemplateRows: "repeat(2)"}}>
-		<Typography align="center" variant="h5">{"developent environment powered by:"}</Typography>
+		<Typography align="center" variant="h5">{"development environment powered by:"}</Typography>
 		<Box sx={{width:"100%",display:"flex",justifyContent:"center"}}> <Box component="img" src="archlinux.svg" sx={{maxWidth:"100%",height:"auto"}} ></Box></Box>
 	</Box>,
 	<Typography align="center" variant="h5">{"honestly i'm running out of ideas."}</Typography>
