@@ -77,9 +77,6 @@ export function Carrousel(props){
 			else{
 				setPanelCount(1)
 			}
-		//(WORKAROUND) Setting the PanelsPerView prop directly to the state didn't work,
-		//so i had to change the property on the DOM element itself...
-			theFlicker.current.panelsPerView=panelCount
 		},[bigCarrousel, panelCount])
 	
 	return (
