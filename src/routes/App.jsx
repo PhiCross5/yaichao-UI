@@ -46,10 +46,10 @@ const customTheme = createTheme(deepmerge(baseTheme,iaçú))
 const featured=[
 	<Box component="img" src="lizard-white.png" maxwidth="100%" height="auto"></Box>,
 	<Box sx={{width:"100%",height:"100%", display:"grid", gridTemplateRows: "repeat(2)"}}>
-		<Typography align="center" >{"developent environment powered by:"}</Typography>
+		<Typography align="center" variant="h5">{"developent environment powered by:"}</Typography>
 		<Box sx={{width:"100%",display:"flex",justifyContent:"center"}}> <Box component="img" src="archlinux.svg" sx={{maxWidth:"100%",height:"auto"}} ></Box></Box>
 	</Box>,
-	<Typography align="center">{"honestly i'm running out of ideas."}</Typography>
+	<Typography align="center" variant="h5">{"honestly i'm running out of ideas."}</Typography>
 ]
 
 export function HomePage(){
@@ -64,7 +64,7 @@ export function HomePage(){
 							height:"100%",
 							width:"100%",
 							objectFit:"fill",
-							filter:"blur(1.5px) brightness(0.86) "
+							filter:"blur(9.5px) brightness(0.86) "
 						}}></video>
 				</Box>
 				<Box sx={{position:"relative", textShadow:"2px 2px 1.9px #000000, 1.6px 1.6px 7.4px #000000"}}>
@@ -74,7 +74,7 @@ export function HomePage(){
 
 			</Box>
 			<Box sx={{my:1,px:2}}>
-				<Carrousel >
+				<Carrousel delay={2700}>
 					{featured.map((e,i) => <div className="flicking-panel" key={i}><Box sx={{ display:"flex", width:"100%",height:"100%",justifyContent:"center", alignItems:"center"}}o>{e}</Box></div>)}
 				</Carrousel>
 			</Box>
