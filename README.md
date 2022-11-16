@@ -1,5 +1,5 @@
 # Yaichao-UI: react UI demos
-This repository provides react components written in JSX with the use of a wide variety of external ready-made components, demonstrating how they can integrate with other components.
+This repository provides react components written in JSX with the use of a wide variety of external ready-made components, demonstrating how they can integrate with each other at a page.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
